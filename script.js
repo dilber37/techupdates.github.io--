@@ -13,7 +13,7 @@ function sendMessage() {
   const message = chatInput.value.trim();
   if (message !== '') {
     appendMessage('You', message);
-    saveMessage('You', message);
+    saveMessage('You', message); // Call server-side function to save message
     chatInput.value = '';
   }
 }
@@ -26,18 +26,20 @@ function appendMessage(sender, content) {
 }
 
 function saveMessage(sender, content) {
-  const messages = JSON.parse(localStorage.getItem('chatMessages')) || [];
-  const newMessage = { sender, content };
-  messages.push(newMessage);
-  localStorage.setItem('chatMessages', JSON.stringify(messages));
+  // Call server-side PHP script to save message to a database
+  const xhr = new XMLHttpRequest();
+  xhr.open('POST', 'save_message.php', true);
+  xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState === XMLHttpRequest.DONE) {
+      if (xhr.status === 200) {
+        // Handle successful response
+        console.log('Message saved successfully');
+      } else {
+        // Handle error response
+        console.error('Failed to save message');
+      }
+    }
+  };
+  xhr.send(`sender=${encodeURIComponent(sender)}&content=${encodeURIComponent(content)}`);
 }
-
-function loadMessages() {
-  const messages = JSON.parse(localStorage.getItem('chatMessages')) || [];
-  messages.forEach((message) => {
-    appendMessage(message.sender, message.content);
-  });
-}
-
-loadMessages();
-
