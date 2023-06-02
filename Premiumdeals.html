@@ -3,69 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
     <title>Document</title>
     <style>
-   #products h3 {
-    font-size: 7mm;
-    }
-    .products{
-text-align: center;
-    }
-    div{
-        border: 2px solid black;
-        padding: 2px;
-    }
-    img{
-        margin-left: 500px;
-    }
-    div{
-        margin-left: 200px;
-        margin-right:250px ;
-    }
-    .button{
-        background-color: black;
-        color: white;
-        padding: 4px;
-    }
+        main{
+            border: 2px solid red;
+            width: 200px;
+            background-color: black;
+            color: white;
+            float: none;
+            font-size: large;
+            margin-left: 35%;
+            text-align: center;
 
-
+        
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            border: 2px solid black;
+            margin-left: 35%;
+            cursor: pointer;
+        }
+        img{
+            margin-left: 35%;
+        }
+        
+        
     </style>
 </head>
 <body>
-    <div id="products">
-        <h1 class="products">Bluetooth speaker</h1>
-        <h3>TP-Link NFC-Enabled Bluetooth 4.1 Music Receiver, Wireless Audio Adapter Streaming Music from Echo Smart Phone Tablet PC to Home Car Stereo Sound System (HA100)</h3>
-        <img src="https://m.media-amazon.com/images/I/51dUE3gssZL._SX569_.jpg" width="325" alt="bluetooth">
-        <p> Introducing the TP-Link NFC-Enabled Bluetooth 4.1 Music Receiver: A Seamless Audio Streaming Solution for Your Home and Car Stereo
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAABIFBMVEUbGxsUEABLWp9qd+JjeN0WEwBnfupogO8aGhgTEQAXFQRxW7ltaMsQEwAYGRVfaLhWX6NvYcFuZMZyWLUVFgxdZbENFAAXFxFUXJ0AAABBTIl2TKRyV7MVFgpwac8iIiEPCwBrb9YTGAAdHhgnJi5qd+MPCQBvgedvhPkwKjdxTJl0UatxVqd4Wbh1WrJdTIw5M0tGPmNfVJhvZLsvLkBJRnVuashOUYhCSG9LU4MkJSlnd9M0N0o2NjMpLUdNOWJdQ3pENVVCNlNpTJJVQXJtVqMWIABXSX1MRmxvWq1hVZNDQV9jWJkaHhJiVaBIR2o3Ok9RWpRcZ6oyOWIgIi1jccYqKiNMU3hgbbsvMTgiJTVNUWgwLhogHwkyNEA5QXJYTeNwAAAMVElEQVR4nO2bC1fayhaA8fDIAyZCCAStCQRQtFQBeYNtTz31+qBS0dpbz73S//8v7t4TIAG15Z5lAF37a5dkJo/Ze/ZrkoDPRxAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEsWT0ZQvgMUru46WybCG8RNl7++bt3mtW8fINcrlsMTwk+xYUfJtdthjekfyT2/DP5LIF8Qrt0xubT8ayRfEGJc+1wz+vNNkkIQiLH5OfihCKrzLZJP8E1UpJOxj/eoWhqE1sl+W2ZMsW6LlR9orFN0Uef2IedC2WX1soXr4tFosVO4dqx6Dsu5y4ZJGel2QJFCyNgw9Cslh8XaFofASVXAk0+xe0P78iFTEIi0VXERTT2FF+PXdS2XdOENroZVQx/VpCkQfhzGI0+fkVhaLxcb9YfDe7ikn+9VDtF4qyBwoe5GfLn3gJrrv/SVuKTM/Kk5ootUc1f3kkS/vF/dOJNyraRCVWQe998bfDxuf9ra2TiRpK7aAzSaBc+dILD0UIwq0tl1LZd/tOAgUH3trar7zo22ExdwA6HE+CEKy25XbZ/Bbsrr3kUEyW4qDR5EZJP95HlZy1jFGBjneXL7fwJyEI4yeOV6JFgQPntoKBUeMvt/DrNQzCtJM8D0Gd8/hW/NBRKXsCVl6pNbihze1SYLK4OwjBJePx83+do0oTx1U6W/H4/vxrcNHweLlulD7nknNmhmR/KgiVfDweDw+1YRg+HJW0Y9D7YM41uJLMnZ56m3v1T/vhUjk5zzyyz/vxsBOEvuQJGKvOfMYZquQKxVNon8zjpzqrlcKep97seTgcPqlkjd9Nul4LT9mGnYbj4T4qwi5g69B5EpXsh+MuWz+BaGQr/f1wuO/1IyytHkYOTtPsl3Mppg/gMMcZ9TI0q7z0i5c4S3U2fejxL9fgCrs8Pecjf/L6tlnMhUeUyuwXQrE+HOIYxtaqZ5+gDPF8x9u49uHO017B3dPmwPu0y8ZjhcPnlSx7QizwySmHYofQvpDGrTOU1Sn0DB3j/An3EzV23J+M+dn7NZ6Sj0EgjtUs5R91Vr0MB7kqoVFBFVwqfYG2OxRxAkqPqaiwXN12z9ghfi7iwQeaI5btnIZH4x6zByVSTOOe8sSJxQ4oHDtyIki8rELH2bQTxx6uwXW2N5rL2EX+PvbELDw3CtgndsogtZ3E+NjVem7GkBiEMVd2ZCfQrruF04eos/P0TdmbbiOiljzu20OcwxDsFMZdzJNydg5aZXn8H8ZgVKBUY64Ux2VxB2Ed29O3utg35beV6bZPRPeMcfrcTVg1Fj5ZzNsOrQKjVtAFFZauV0dSOCVSO8YOJ2CUGrY7M7PPvkCnKxSn2zrLl+wLxy72+OzZoy7oCWsWtBplPl6HbUmqoxIJQQe4Vpp4eOzrbGURc9h95nRn0WJ1HoqYPe2LntfHdZdhz6IeeRinsZg6KWeQDS5G032InewQtzKTo3m7n3lwFekr9Kv5iam1o3HbqFdVvJza77GxYyg16PJ4SeogpqcdDBYcI5lMKNtQTkC43kQY4xR39aSZi+h3eNiFcxW0oYrpiR3iCerYPW24E/9iUfDMoAyqezhelUEudU/EOEQJnbzILnDP1bSbimlwUtU1TdIXuCZPT+iPanV6WTg7qV6j1EyY7mmX0VkZROTZnNVhq+q6e0AVG0N3loCCiAplXcsaE0KZt1lVVfuZ6aU9OoK6yDc5Ul9VqzNhr+RBCJ5ibRv3Hb/k7cadu6AkcBKc4mCA3VXVtjtqOBtx2Fdd5ItxvWKq6tmM34mqqta1iUCuGBOzMCNq1SkYLAXtmLOqg9lRVXO0ppEbDzTUezBeZaFvAPicziSPS5DMzvYYNiCxa1WWRZWr468lZpogsLo3sSn6rGqOFkFirjGZqTHoMw3ZE02ewqhHVHMmLlDr5mju9VpEVSNHzso0hyqu224ptUDBiLNs5QqY4zwi5k0w59SlFehyp91FIOZAg5nchhpOuhj6ccPlhx2wjJnAuy2GLmdWXGkUTToJa0hjqtmb0pBdQFd+wU9VYdCIOf3iiFUjEWc1imJHqk6y1POoYpT5tCuYHLPuykN8MiZBqpfhylMPY9BvI/3Zguo16DjmtOOwvhlx5btMNeK4no87biRipjJ3Dfi4kFz9MBWm47OQxSKmz20wrQ49i3/pL/UjkcZUwWCHkYiTfcR0AzVy2UoD40TMQRXEPXR6Icvw4yZTYYA+kakbXZirSGPx36HizlR3J3XWNCONvDSaa/RZFL3nJBQIQOiA/+sucdm6yY8b2Ug0pC9wmZx7pN7sSAtCAhWmirDRROkTPRmXI9IFFxwm3xWs7Ix3VmXHQpnJcdips3SzYc44h5SAnmV8g0oDcadynl6xUEWz0UxLkD0i3F4Rs+G6rc1EoctyhZRUt4+DfwnJkMqHlgmbprvUKnkrYi5wSepCboC/ZVwdRvkQpEOBD1sgt3VU5yonXEGXXjetpiv7lLmC69AdsZr16miK6u4wROe3lvOOkQ995B4a7/kbXEoLFKwzVkOXs5ouFVnqzGkpPBvBfj3XsE+CPwnnppDDJ3LRpcJGTFsRKzE9tmiwXsJCUa1EBmwkR1HXM5ePyU7mgbUcXKFRltCY/Byr0ZykqhFGHY7pLen7YRLoYj24K9WlfLMBsvLwE6UWHGPVHpUwE4Vd6zm+T2riduvhI2apCtda1tdtlRpI1Qw+7GfZ1vpYKZZHdR97kMuVqmdGezKJVC3zcCL0KxxjsYtuF9I6CP/o0yFNclak2RRY56EVjB6cfORavD36hoD7yfK+4adV0Aq/q8Vi5qtlpR48p8lbViL3u1s+sQMjRJeTZzgMPfD34xv59e36TErKNay69FvbBNGTl/l1FBkFmCPRKVLK35uyl7TeqM1hmixM4ZJKhY2YBQ0T80gg9Sz3WwkpkZDnqAAaZuLWUr9KLEEW8c/1Gx8j33RVwlozM0/2kG4tq7tME2LB8D+SRR5F1J5qPIl+tG35HylHCwULhuXVwl+CJYF/cQ+6H0fv+a1tjyqymPZb/rmi3FMyXb9XoRJswuxdLf0nC0Z929r+6okYctfvv814ceX/C1EO+P3rG9Lzk+lt+/3LeHoxS3Dgh6le/4ckbCYbkzb0wNQFlrbmdqHk/d6RWnKpsFlb3/aDP21vP7+C26vxg2GlFk09JIqk+P8xrs05aS69VNgowd8jBf9JslmFKCReBTJ6oRLUfGJQ13Ebyj9+Kj6+w94P29iraLBlwJGaDoeJQax2sNcQfeMzgxh6QVyYi+DaK/E7BW2QGqRSHwbt4N+pXg+TzJWut1KpwVEG+gfDDO4fyKmBJLVSR+3BzqAtdVKtFhzWSbUNqKepVDu3xs/s6dLg2hCVVBvmK51KDBb90vBR7gOhUEi4KXQ3PuwOmgKk+LYmRYVCSBgWtv1CKA1//YX7kNDOhYTWbWEj1M18272OCt2NhHC75ssU4PRCpy1AvRlId4LQlgzsl7qh7u71SiTTzHfhj42NQrfXFppN4d9HVwbc9gjfr4RB4XajLbS63eHVUC5sB36EQl9BQ1hrfhOi0ZBwHQpxDbvBlpBo45m5tWgo0N0xoF+8DAV6R6vhpuKd8EdwpxDaFUKDdkgQdu9E0DDR3e0VAj8CQqcLfbdroR8h4YeAGoZud74J19HQD+E2YGu4IYdu+ZlDOZRo715BMyNKbbjiYCXWNCMNu3/fCOCl//n+Poc27N62NwqBrgB/u/99/x1F795wLy0E7ntCKiq8L9yNNLxvC1Gw4ff3clsIFYREJnR738m13h8FCivx80Txbhc0FLo7PA4hqAaydL073NFA67VCKFgQwDz3wo+1zs9d1HAgAMNr4W4IIbnm2ymA8QK5Nj+zW2i1u8J3PAJsXsB4XAHEzuaNLm/+lL9t9j5sAj3IpZuQBaFvrbd51cQ+Y7Ol6R82az835UzrOjWUWpsdBQ7QfDLsbwW1KzyqtXmzJl1t8u2bdPO6La9EHMItos7fKcGnLgNYD7lo0KfLuoF9/J2TIiuajI/8oUryI/iLKNjL9+GZ9rn2tihLK3BzSLwSxDWPWJUf64t6IeANP1dERVGDRO8FwuaK3B+KuuANu6uioU//wyNulv40eMwcTzH+ESujIEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQr4v/AcHhv36B7GPqAAAAAElFTkSuQmCC" alt="">
+     <br>
+     <br>
+     <br>
+     <br>
+      
+    <main>
+        <p>Best Premium  deals</p>
 
-            In the age of wireless connectivity, music lovers seek convenient ways to stream their favorite tunes effortlessly. The TP-Link NFC-Enabled Bluetooth 4.1 Music Receiver, also known as HA100, emerges as a game-changer in this realm, offering a simple and efficient solution to stream music from your Echo, smartphone, tablet, or PC to your home or car stereo system. Let's delve into the features and benefits of this innovative wireless audio adapter.
-            
-            First and foremost, the HA100 is equipped with Bluetooth 4.1 technology, ensuring a stable and reliable connection between your audio source and the stereo system. With its advanced chipset, this music receiver guarantees low latency and high-quality audio transmission, delivering an immersive listening experience without any compromise on sound fidelity.
-            
-            One standout feature of the HA100 is its NFC (Near Field Communication) capability. By simply touching your NFC-enabled device to the HA100, you can initiate the pairing process instantly. This eliminates the need for manual Bluetooth pairing, saving you time and hassle. It's a seamless and convenient way to connect your audio source to the music receiver effortlessly.
-            
-            Versatility is another key attribute of the TP-Link HA100. Whether you want to stream music from your Echo device, smartphone, tablet, or PC, this wireless audio adapter has got you covered. It supports a wide range of audio sources, allowing you to enjoy your favorite playlists, podcasts, or audiobooks on your home or car stereo system.
-            
-            Installation and setup of the HA100 are incredibly simple. It comes with both 3.5mm and RCA output ports, making it compatible with various stereo systems. Connecting the music receiver to your existing setup is a breeze, and the package includes all the necessary cables. Moreover, the compact and lightweight design of the HA100 ensures portability, enabling you to carry it conveniently wherever you go.
-            
-            The TP-Link HA100 boasts a robust range of up to 20 meters (66 feet), providing you with the freedom to move around without losing audio quality. Whether you're throwing a backyard party, lounging in your living room, or even driving in your car, this music receiver ensures that your music keeps playing, no matter where you are.
-            
-            Additionally, the HA100 features a built-in rechargeable battery, allowing for up to 8 hours of continuous music playback. This makes it ideal for long road trips, outdoor gatherings, or situations where a power source might not be readily available. The battery can be easily recharged via the included USB cable.
-            
-            In conclusion, the TP-Link NFC-Enabled Bluetooth 4.1 Music Receiver, HA100, offers a seamless and convenient solution for streaming music from your Echo, smartphone, tablet, or PC to your home or car stereo system. With its advanced Bluetooth technology, NFC capability, and versatile compatibility, this wireless audio adapter ensures high-quality audio transmission and a hassle-free user experience. Embrace the world of wireless audio streaming and elevate your listening pleasure with the TP-Link HA100.
-            
-            
-            
-            
-            </p>
-            <h3>price-₹1,599.00</h3>
-            
-         
-                <a class="button" href="https://www.amazon.in/dp/B00YPATOEE?_encoding=UTF8&linkCode=ib1&tag=dilber03-21&linkId=e5058cb9a7fc5107b30a188f0cf03288&ref_=ihub_gshop-asin_B00YPATOEE"><button>Buy now</button></a>
-                
-            
-
+    </main>
+    <br>
+    <br>
+    <hr>
+    <div id="watch">
+        <a target="_blank" href="https://www.amazon.in/gp/bestsellers/watches?_encoding=UTF8&linkCode=ib1&tag=dilber03-21&linkId=5a9266f857764d6f75a3c09793b4f1e9&ref_=ihub_curatedcontent_87dec40c-6b8b-4d9c-a1d1-7ebba107ba2a">Best Sellers in Watches</a>
+<br>
+<br>
+<br>
+        <img src="https://m.media-amazon.com/images/G/01/ACI/ACI_Watches._SS300_SCLZZZZZZZ_.png" width="200-x" alt="Img ">
     </div>
 </body>
 </html>
